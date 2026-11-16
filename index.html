@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEZONE — Игровые новости</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="intro-screen" id="introScreen">
+    <div class="intro-logo">GAME<span>ZONE</span></div>
+    <p>ТВОЙ ИГРОВОЙ МИР</p>
+</div>
+
+    <header class="header">
+        <div class="logo">GAME<span>ZONE</span></div>
+
+        <nav class="navigation">
+            <a href="#home">Главная</a>
+            <a href="#news">Новости</a>
+            <a href="#reviews">Обзоры</a>
+            <a href="#ratings">Рейтинги</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero" id="home">
+            <video class="hero-video" autoplay muted loop playsinline>
+    <source src="./dota-intro.mp4.mp4" type="video/mp4">
+</video>
+            <div class="hero-content">
+                <p class="subtitle">ТВОЙ ИГРОВОЙ МИР</p>
+
+                <h1>
+                    ПОГРУЗИСЬ<br>
+                    В МИР <span>ИГР</span>
+                </h1>
+
+                <p class="description">
+                    Самые свежие игровые новости, честные обзоры и лучшие рейтинги.
+                </p>
+
+                <a href="#news" class="hero-button">
+                    Читать новости →
+                </a>
+            </div>
+        </section>
+
+        <!-- НОВОСТИ -->
+        <section class="dota-section" id="dota">
+    <div class="dota-content">
+        <p class="dota-label">МИР DOTA 2</p>
+
+        <h2>
+            СТАНЬ ЛЕГЕНДОЙ
+            <span>НА ПОЛЕ БИТВЫ</span>
+        </h2>
+
+        <p class="dota-description">
+            Выбирай героя, собирай команду и сражайся
+            в одной из самых популярных MOBA-игр в мире.
+        </p>
+
+        <div class="dota-buttons">
+            <a class="steam-button"
+               href="https://store.steampowered.com/app/570/Dota_2/"
+               target="_blank">
+                <span>▶</span> ИГРАТЬ БЕСПЛАТНО В STEAM
+            </a>
+
+            <a class="dota-more" href="https://www.dota2.com/"
+               target="_blank">
+                Официальный сайт Dota 2 →
+            </a>
+        </div>
+    </div>
+
+    <div class="dota-decoration">DOTA 2</div>
+</section><section class="news" id="news">
+
+            <p class="subtitle">БУДЬ В КУРСЕ</p>
+            <h2>Последние новости</h2>
+
+            <!-- ПОИСК -->
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="newsSearch"
+                    placeholder="🔎 Найти игру или новость..."
+                >
+            </div>
+
+            <div class="news-grid">
+
+                <!-- НОВОСТЬ 1 -->
+                <a href="article.html" class="news-card" data-search="pc компьютер технологии новости шутер стратегии симулятор">
+    <div class="game-image image-one"></div>
+
+    <div class="card-content">
+        <span>PC • НОВОСТИ</span>
+        <h3>Будущее игровой индустрии</h3>
+        <p>Новые технологии меняют мир видеоигр.</p>
+    </div>
+</a>
+
+                <!-- НОВОСТЬ 2 -->
+                <article class="news-card" data-search="playstation ps5 приключения экшен обзоры rpg гонки">
+                    <div class="game-image image-two"></div>
+
+                    <div class="card-content">
+                        <span>PLAYSTATION • ОБЗОРЫ</span>
+                        <h3>Лучшие игровые приключения</h3>
+                        <p>Игры, которые стоит попробовать.</p>
+                    </div>
+                </article>
+
+                <!-- НОВОСТЬ 3 -->
+                <article class="news-card" data-search="xbox xbox series игры новости консоль шутер гонки спорт">
+                    <div class="game-image image-three"></div>
+
+                    <div class="card-content">
+                        <span>XBOX • НОВОСТИ</span>
+                        <h3>Игровые новинки</h3>
+                        <p>Что интересного происходит в игровой индустрии?</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ОБЗОРЫ -->
+        <section class="extra" id="reviews">
+            <p class="subtitle">НАШЕ МНЕНИЕ</p>
+            <h2>Честные обзоры игр</h2>
+            <p>
+                Помогаем найти игры, которые действительно стоят твоего времени.
+            </p>
+        </section>
+
+        <!-- РЕЙТИНГИ -->
+        <section class="extra" id="ratings">
+            <p class="subtitle">ВЫБОР РЕДАКЦИИ</p>
+            <h2>Игровые рейтинги</h2>
+            <p>
+                Лучшие игры, оценки и рекомендации GAMEZONE.
+            </p>
+        </section>
+
+    
+<section class="dota-section" id="dota">
+    <div class="dota-container">
+
+        <p class="subtitle">МИР КИБЕРСПОРТА</p>
+        <h2>DOTA 2 — БОЛЬШЕ, ЧЕМ ПРОСТО ИГРА</h2>
+
+        <p class="dota-intro">
+            Dota 2 — легендарная командная стратегия, в которой
+            победа зависит от мастерства, тактики, командной работы
+            и правильных решений. Каждый матч — новая история,
+            а каждый герой открывает собственный стиль игры.
+        </p>
+
+        <div class="dota-banner">
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg"
+                 alt="Dota 2">
+        </div>
+
+        <h2>Что такое Dota 2?</h2>
+        <p>
+            Dota 2 — многопользовательская игра жанра MOBA.
+            Две команды по пять игроков сражаются на одной карте.
+            Одна команда играет за Свет (Radiant), другая — за Тьму
+            (Dire). Главная задача — пробиться к базе противника
+            и уничтожить его главное здание — Древнего.
+        </p>
+
+        <p>
+            На первый взгляд всё просто: выбрать героя, купить
+            предметы и сражаться. Но за этим скрывается огромная
+            глубина. Нужно следить за картой, рассчитывать время,
+            помогать союзникам, выбирать правильные предметы
+            и предугадывать действия противника.
+        </p>
+
+        <h2>Основные характеристики</h2>
+
+        <div class="dota-stats">
+            <div class="dota-stat">
+                <strong>5 на 5</strong>
+                <span>Игроков в команде</span>
+            </div>
+            <div class="dota-stat">
+                <strong>100+</strong>
+                <span>Героев</span>
+            </div>
+            <div class="dota-stat">
+                <strong>2013</strong>
+                <span>Год выхода</span>
+            </div>
+            <div class="dota-stat">
+                <strong>FREE</strong>
+                <span>Бесплатная игра</span>
+            </div>
+        </div>
+
+        <h2>Карта Dota 2</h2>
+        <p>
+            Карта разделена между двумя сторонами — Radiant и Dire.
+            Между базами проходят три линии: верхняя, центральная
+            и нижняя. По ним движутся отряды крипов, а башни
+            защищают территорию каждой команды.
+        </p>
+
+        <ul class="dota-list">
+            <li><strong>Верхняя линия (Top)</strong> — одна из трёх основных дорог к базе противника.</li>
+            <li><strong>Центральная линия (Mid)</strong> — важная линия для получения опыта и контроля карты.</li>
+            <li><strong>Нижняя линия (Bot)</strong> — ещё один путь для продвижения к вражеской базе.</li>
+            <li><strong>Лес (Jungle)</strong> — территория с нейтральными крипами, которых можно побеждать ради ресурсов.</li>
+            <li><strong>Рошан (Roshan)</strong> — мощный нейтральный монстр, победа над которым может дать команде важное преимущество.</li>
+        </ul>
+
+        <h2>Пять основных позиций</h2>
+        <p>
+            В командной игре принято распределять игроков по
+            позициям от первой до пятой. Это показывает, кому
+            обычно требуется больше ресурсов и какую задачу
+            выполняет игрок.
+        </p>
+
+        <div class="dota-roles">
+            <div class="dota-role">
+                <h3>Позиция 1 — Carry</h3>
+                <p>Главный герой поздней стадии игры. Получает много золота, покупает сильные предметы и наносит большой урон.</p>
+            </div>
+            <div class="dota-role">
+                <h3>Позиция 2 — Mid</h3>
+                <p>Играет преимущественно на центральной линии. Может быстро получить уровни и помогать команде на других участках карты.</p>
+            </div>
+            <div class="dota-role">
+                <h3>Позиция 3 — Offlane</h3>
+                <p>Часто начинает с сложной линии. Создаёт пространство для команды, инициирует сражения и мешает противникам.</p>
+            </div>
+            <div class="dota-role">
+                <h3>Позиция 4 — Support</h3>
+                <p>Помогает союзникам, устанавливает обзор, участвует в нападениях и контролирует карту.</p>
+            </div>
+            <div class="dota-role">
+                <h3>Позиция 5 — Hard Support</h3>
+                <p>Помогает команде и особенно заботится о безопасном начале игры для главного Carry.</p>
+            </div>
+        </div>
+
+        <h2>Знаменитые герои</h2>
+        <p>
+            У каждого героя есть собственные способности,
+            сильные стороны и слабости. Некоторые герои
+            специализируются на нанесении урона, другие —
+            на лечении, контроле противников или защите союзников.
+        </p>
+
+        <div class="dota-heroes">
+            <div class="dota-hero">
+                <h3>Pudge</h3>
+                <p>Знаменитый герой, способный притягивать врагов крюком и контролировать их.</p>
+            </div>
+            <div class="dota-hero">
+                <h3>Invoker</h3>
+                <p>Сложный маг с большим набором комбинаций заклинаний.</p>
+            </div>
+            <div class="dota-hero">
+                <h3>Phantom Assassin</h3>
+                <p>Убийца, специализирующаяся на быстром физическом уроне и критических атаках.</p>
+            </div>
+            <div class="dota-hero">
+                <h3>Juggernaut</h3>
+                <p>Боец, сочетающий мобильность, защиту и сильные атаки.</p>
+            </div>
+            <div class="dota-hero">
+                <h3>Crystal Maiden</h3>
+                <p>Маг поддержки, помогающий команде заклинаниями и восстановлением маны.</p>
+            </div>
+            <div class="dota-hero">
+                <h3>Anti-Mage</h3>
+                <p>Мобильный боец, который особенно опасен против героев, использующих магию.</p>
+            </div>
+        </div>
+
+        <h2>Предметы и способности</h2>
+        <p>
+            Во время матча игроки получают золото и опыт.
+            Золото используется для покупки предметов, которые
+            усиливают героя: увеличивают урон, скорость атаки,
+            защиту, здоровье или дают новые способности.
+        </p>
+
+        <p>
+            У каждого героя есть собственные умения и мощная
+            ультимативная способность. Правильное использование
+            способностей может изменить ход целого сражения.
+        </p>
+
+        <h2>Киберспорт и The International</h2>
+        <p>
+            Dota 2 стала одной из самых известных дисциплин
+            киберспорта. Профессиональные команды со всего мира
+            соревнуются на международных турнирах, где важны
+            не только индивидуальные навыки, но и командная стратегия.
+        </p>
+
+        <p>
+            Самый известный турнир игры — The International,
+            организуемый при участии Valve. На нём лучшие команды
+            борются за чемпионский титул и призовые.
+        </p>
+
+        <h2>Советы начинающим игрокам</h2>
+        <ol class="dota-list">
+            <li>Начни с простых героев, например Sven, Dragon Knight или Wraith King.</li>
+            <li>Изучи карту и научись следить за мини-картой.</li>
+            <li>Тренируй добивание крипов, чтобы получать золото.</li>
+            <li>Не забывай покупать предметы и использовать способности.</li>
+            <li>Общайся с командой и помогай союзникам.</li>
+            <li>Не расстраивайся из-за поражений — анализируй ошибки.</li>
+        </ol>
+
+        <div class="dota-conclusion">
+            <h2>Почему Dota 2 до сих пор интересна?</h2>
+            <p>
+                Благодаря огромному выбору героев, разнообразию
+                предметов и постоянно меняющимся стратегиям
+                матчи никогда не бывают полностью одинаковыми.
+                Здесь можно совершенствовать навыки годами
+                и каждый раз открывать что-то новое.
+            </p>
+            <a href="https://www.dota2.com/home" target="_blank">
+                Официальный сайт Dota 2 →
+            </a>
+        </div>
+
+    </div>
+</section>
+</main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="logo">GAME<span>ZONE</span></div>
+        <p>© 2026 GAMEZONE. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
